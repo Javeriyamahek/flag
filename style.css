@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.flag{
+    height: 250px;
+    width: 350px;
+    background-image: linear-gradient(orange , white  , green ) ;
+    position: absolute;
+    left:180px;
+    top:40px;
+    animation: air 2s infinite ease-in-out;
+    transform-origin: center;
+}
+
+@keyframes air{
+    0%{
+        transform:rotateY(0deg);
+    }
+    25%{
+        transform: rotateY(-8deg);
+    }
+    50%{
+        transform: rotateY(10deg);
+    }
+    75%{
+       transform: rotateY(-10deg);
+    }           
+    100%{
+        transform: rotateY(0deg); 
+                   
+    }
+}
+.chakra{
+    height: 80px;
+    width: 80px;
+    border: 3px solid navy;
+    
+    border-radius: 50%;
+    position: absolute;
+    top:125px;
+    left: 320px;
+    
+background: repeating-conic-gradient(navy 0deg 6deg, transparent 2deg 15deg);
+    
+}
+.pole{
+    height:550px;
+    width:20px;
+    background-color: black;
+    position: absolute;
+    top: 20px;
+    left: 180px;
+    border-radius: 18px;
+
+}
+.button1{
+    height:50px;
+    width: 100px;
+    background-color: rgb(143, 145, 174);
+    position: absolute;
+    top: 550px;
+    left:140px;
+    border-radius: 18px;
+border-color: black;
+}
+
+.button2{
+    height:50px;
+    width: 200px;
+    background-color: rgb(143, 145, 174);
+    position: absolute;
+    top: 600px;
+    left:90px;
+    border-radius: 18px;
+border-color: black;
+}
+
+.button3{
+    height:50px;
+    width: 300px;
+    background-color: rgb(143, 145, 174);
+    position: absolute;
+    top: 650px;
+    left:45px;
+    border-radius: 18px;
+border-color: black;
+}
+
+.flag-box{
+    display: none;
+    position: relative;
+}
+#show:checked~.flag-box{
+    display: block;
+}
+
+label{
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top:30px;
+    left:50px;
+}
+#show{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 35px;
+    left: 10px;
+}
